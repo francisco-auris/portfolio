@@ -1,0 +1,65 @@
+.body {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('Background.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.box-icones {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    bottom: 10%;
+    right: 0px;
+}
+.box-icones img {
+    width: 64px;
+    margin: 15px;
+}
+.box-perfil {
+    width: 200px;
+    height: 200px;
+    border:solid 4px #5f27cd;
+    border-radius: 100px;
+    box-shadow: 0px -20px -25px rgba(0,0,0,0.2);
+    background-image: url('perfil.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+.box-round {
+    width: 150px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #5f27cd;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 5em;
+}
+.center {
+    margin-top: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    .body {
+        background-image: url('mobile.svg');
+        background-size: 100% auto;
+        background-position: bottom;
+    }
+    h1 {
+        font-size: 3em !important;
+        align:center;
+    }
+    .box-icones { 
+        width: 100%;
+        bottom: 20px;
+    }
+    .box-icones img {
+        width: 32px;
+    }
+
+  }
